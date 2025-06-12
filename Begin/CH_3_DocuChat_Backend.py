@@ -54,13 +54,13 @@ if os.name == "nt":  # Windows
 os.environ['OPENAI_API_KEY']=""
 S3_KEY=""
 S3_SECRET=""
-S3_BUCKET=""
-S3_REGION=""
-S3_PATH=""
+S3_BUCKET="awsbucket.aiproject"
+S3_REGION="sa-east-1"
+S3_PATH="aiproject"
 
 
 try:
-    MONGO_URL="Add your credentials"
+    MONGO_URL="mongodb+srv://juancpuch:@iaproject.kfwdpg7.mongodb.net/?retryWrites=true&w=majority&appName=iaproject"
 
     # Connect to the MongoDB using the provided MONGO_URL
     client = pymongo.MongoClient(MONGO_URL, uuidRepresentation="standard")
